@@ -1,0 +1,19 @@
+{
+  "name": "google_voice_recognition",
+  "version": "1.0.0",
+  "description": "voice recognition wrapper",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "google-speech-api": "^1.2.0",
+    "method-override": "^2.3.10",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soslan Aldatov (me@supporteam.ru)",
+  "license": "ISC"
+}

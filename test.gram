@@ -1,0 +1,14 @@
+#JSGF V1.0;
+
+/**
+  * JSGF Grammar for test
+  */
+
+grammar test;
+
+<jerusalem> = [jerusalem];
+<petahtikva> =  [petahtikva];
+<roshhaayin> =  [roshhaayin];
+<kiryatshmona> = [kiryatshmona];
+
+public <test> = <jerusalem> <petahtikva> <roshhaayin> <kiryatshmona> ;
