@@ -6,7 +6,7 @@ const methodOverride = require('method-override');
 
 const speech = require('google-speech-api');
 
-const APIKey = 'AIzaSyB2-8Mc0nOmsAUktXV0Ye8eMYawaENtxNQ';
+const APIKey = 'abcdefg'; //please enter correct API key here
 const APILang = 'he-IL';
 
 const app = express();
@@ -26,8 +26,8 @@ app.post('/', function (req, res) {
         maxResults: 1,
         sampleRate: 16000,
     };
-    speech(opts, function(err, results) {
-        if(err) {
+    speech(opts, function (err, results) {
+        if (err) {
             console.log(err);
             return res.send("");
         }
@@ -39,11 +39,9 @@ app.post('/', function (req, res) {
         }
         return res.send(result);
     });
-    
+
 });
 
 app.listen('8787', '127.0.0.1', function () {
     console.log('app started');
 });
-
-
